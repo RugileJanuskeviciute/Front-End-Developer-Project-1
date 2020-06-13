@@ -1,0 +1,85 @@
+.footer{
+    grid-area: ft;
+}
+
+.header{
+    grid-area: hd;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #666666;
+    -webkit-text-stroke: 0.5px #8c8c8c;
+    font-weight: bold;
+}
+
+.content{
+    grid-area: main;
+}
+
+.one{
+    grid-area: one;
+    font-size: 15px;
+}
+
+.two{
+    grid-area: two;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    margin: auto;
+    margin-top: auto;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 100px 25px 25px 600px 50px;
+    border: 2px solid #a3cbdc;
+   grid-template-areas: 
+   "hd hd hd hd"
+   "one one one one"
+   "two two two two"
+   "main main main main"
+   "ft ft ft ft"
+  }
+
+.box {
+    border: 1px solid #a3cbdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input.right {
+    position: absolute;
+    right: 0;
+}
+
+.two input[type=text] {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+    width: 18%;
+    background: #a3cbdc;
+    border: #a3cbdc;
+  }
+
+.two button {
+    float: left;
+    width: 5%;
+    background: #a3cbdc;
+    color: black;
+    font-size: 17px;
+    border-left: none; /* Prevent double borders */
+    border: #a3cbdc;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+  }
+
+.two button:hover {
+    background: #6babc7;
+  }
+
+.two ::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
