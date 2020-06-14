@@ -1,5 +1,6 @@
-.footer{
-    grid-area: ft;
+body{
+    padding: 20px;
+    background: rgb(219, 212, 212);
 }
 
 .header{
@@ -9,16 +10,37 @@
     color: #666666;
     -webkit-text-stroke: 0.5px #8c8c8c;
     font-weight: bold;
+    align-items: center;
+    justify-content: center;
 }
 
 .content{
     grid-area: main;
     padding: 15px;
+    margin-bottom: 20px;
+}
+
+.footer{
+    grid-area: ft;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    padding:5px;
+    padding-left: 15px;
+    align-items: center;
+} 
+
+.foot{
+    grid-area:fo;
+    padding:10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .one{
     grid-area: one;
     font-size: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 .two{
@@ -30,22 +52,21 @@
     width: 100%;
     margin: auto;
     margin-top: auto;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 100px 25px 25px 1500px 50px;
-    border: 2px solid black;
+    grid-template-columns: 1px 300px;
+    grid-template-rows: 100px 25px 25px 1800px 65px;
+    border: 2px solid rgb(209, 25, 25);
    grid-template-areas: 
    "hd hd hd hd"
    "one one one one"
    "two two two two"
    "main main main main"
-   "ft ft ft ft"
+   "ft ft fo fo"
   }
 
 .box {
-    border: 1px solid black;
+    border: 1px solid green;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 input.right {
@@ -92,3 +113,42 @@ input.right {
     width: 100%;
   }
 
+  .fa {
+    font-size: 30px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 60%;
+    padding: 6px;
+    align-items: center;
+  }
+
+  .fa:hover {
+    opacity: 0.9;
+    color: black;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin: 5px;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    margin: 5px;
+  }
+
+  .fa-instagram {
+    background: palevioletred;
+    color: white;
+    margin: 5px;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+    margin: 5px;
+  }
