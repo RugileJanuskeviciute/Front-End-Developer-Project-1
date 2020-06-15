@@ -18,22 +18,63 @@ body{
     grid-area: main;
     padding: 15px;
     margin-bottom: 20px;
+    background-color: royalblue;
+}
+
+.post-2{
+    grid-area: post; 
+    background-color: saddlebrown;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.post-3{
+    grid-area: three; 
+    background-color: seagreen;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.page{
+    grid-area: page;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer{
     grid-area: ft;
     font-family: 'Playfair Display', serif;
-    font-size: 15px;
+    font-size: 16px;
     padding:5px;
     padding-left: 15px;
     align-items: center;
+    justify-self: center;
 } 
 
 .foot{
     grid-area:fo;
-    padding:10px;
+    padding:5px;
     align-items: center;
     justify-content: center;
+}
+
+.bottom{
+    grid-area: bt;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+}
+
+.end{
+    grid-area: end;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px;
+    padding: 10px
 }
 
 .one{
@@ -52,21 +93,25 @@ body{
     width: 100%;
     margin: auto;
     margin-top: auto;
-    grid-template-columns: 1px 300px;
-    grid-template-rows: 100px 25px 25px 1800px 65px;
+    grid-template-columns: 10px 300px;
+    grid-template-rows: 100px 25px 25px 600px 950px 600px 100px 50px 70px 20px;
     border: 2px solid rgb(209, 25, 25);
    grid-template-areas: 
    "hd hd hd hd"
    "one one one one"
    "two two two two"
    "main main main main"
+   "post post post post"
+   "three three three three"
+   "page page page page"
    "ft ft fo fo"
+   "bt bt bt bt"
+   "end end end end"
   }
 
 .box {
     border: 1px solid green;
     display: flex;
-
 }
 
 input.right {
@@ -120,7 +165,7 @@ input.right {
     text-align: center;
     text-decoration: none;
     border-radius: 60%;
-    padding: 6px;
+    padding: 4px;
     align-items: center;
   }
 
@@ -151,4 +196,18 @@ input.right {
     background: #bb0000;
     color: white;
     margin: 5px;
+  }
+
+  .button {
+    background-color: #4CAF50;
+    border: 2px solid black;
+    color: white;
+    padding: 2px 22px;
+    border-radius: 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
   }
