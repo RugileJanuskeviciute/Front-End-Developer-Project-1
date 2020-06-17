@@ -1,11 +1,12 @@
 body{
-    background-color: burlywood;
+    padding: 20px;
+    background: rgb(219, 212, 212);
 }
 
 .header{
     grid-area: hd;
     font-family: 'Playfair Display', serif;
-    font-size: 12px;
+    font-size: 24px;
     color: #666666;
     -webkit-text-stroke: 0.5px #8c8c8c;
     font-weight: bold;
@@ -15,9 +16,23 @@ body{
 
 .content{
     grid-area: main;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    padding: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: royalblue;
+}
+
+.post-2{
+    grid-area: post; 
+    background-color: saddlebrown;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.post-3{
+    grid-area: three; 
+    background-color: seagreen;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
 .empty{
@@ -67,108 +82,56 @@ body{
     padding: 10px
 }
 
+.one{
+    grid-area: one;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.two{
+    grid-area: two;
+}
+
 .container{
     display: grid;
-    padding: 5px;
     width: 100%;
     margin: auto;
     margin-top: auto;
-    grid-template-columns: 50px 300px;
-    grid-template-rows: 40px 1825px 40px 40px 70px 30px;
-    grid-template-areas: 
-    "hd hd hd hd"
-    "main main main main"
-    "empty empty chat chat"
-    "ft ft fo fo"
+    grid-template-columns: 10px 300px;
+    grid-template-rows: 100px 25px 25px auto auto auto 40px 50px 70px 40px 10px;
+    border: 2px solid rgb(209, 25, 25);
+   grid-template-areas: 
+   "hd hd hd hd"
+   "one one one one"
+   "two two two two"
+   "main main main main"
+   "post post post post"
+   "three three three three"
+   "empty empty chat chat"
+   "ft ft fo fo"
    "bt bt bt bt"
    "end end end end"
-}
-
+  }
 
 .box {
     border: 1px solid green;
     display: flex;
 }
 
-a{
-    text-decoration: none;
-    color: currentColor;
+input.right {
+    position: absolute;
+    right: 0;
 }
 
-#one{
-    font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
-    font-size: 17px;
-}
-
-li:hover {
-    opacity: 0.9;
-    color: blueviolet;
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 
-#caption{
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    font-size: 15px;
-}
-
-hr{
-    border-top: 2px solid black;
-}
-
-#reply{
-    grid-area: main;
-    display: grid;
-    font-family: 'Raleway', sans-serif;
-    border: 2px solid black;
-    text-align: center;
-    align-items: center;
-    width: 170px;
-    height: 25px;
-    margin: 0 auto;
-    background-color: blueviolet;
-}
-
-#submission{
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
-    text-align: left;
-    align-items: left;
-}
-
-#fname{
-    width: 510px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px #999;
-}
-
-textarea {
-    padding: 10px;
-    line-height: 1.5;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px #999;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-button{
-    width: 100px;
-    font-family: 'Playfair Display', serif;
-    font-size: 14px;
-    box-shadow: 1px 1px 1px #999;
-}
-
-button:hover{
-    opacity: 0.9;
-    background-color: darkcyan;
-}
-
-.fa {
+  .fa {
     font-size: 30px;
     width: 25px;
     height: 25px;
@@ -206,18 +169,32 @@ button:hover{
     background: #bb0000;
     color: white;
     margin: 5px;
-}
-
-  #line{
-      border: 1px dashed black;
   }
 
-  .link:hover{
-      opacity: 0.9;
-      color: paleturquoise;
+  .button {
+    background-color: #4CAF50;
+    border: 2px solid black;
+    color: white;
+    padding: 2px 22px;
+    border-radius: 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
   }
 
-.photo{
-    height:800px;
-    width:600px;
-}
+  .button:hover {
+    opacity: 0.9;
+    background-color: black;
+  }
+
+  a{
+      text-decoration: none;
+      color: currentColor;
+  }
+
+  .date{
+      text-decoration: underline;
+  }
