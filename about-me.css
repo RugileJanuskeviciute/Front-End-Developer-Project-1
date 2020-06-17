@@ -1,0 +1,138 @@
+body{
+    background-color: burlywood;
+}
+
+.header{
+    grid-area: hd;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    color: #666666;
+    -webkit-text-stroke: 0.5px #8c8c8c;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.row {
+    display: flex;
+    grid-area: ro; 
+    padding-top: 30px;
+  }
+
+.content{
+    grid-area: main;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.empty{
+    grid-area:empty;
+}
+
+.chat{
+    grid-area: chat;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.footer{
+    grid-area: ft;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    padding:5px;
+    padding-left: 15px;
+    align-items: center;
+    justify-self: center;
+} 
+
+.foot{
+    grid-area:fo;
+    padding:5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom{
+    grid-area: bt;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+}
+
+.end{
+    grid-area: end;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px;
+    padding: 10px
+}
+
+.container{
+    display: grid;
+    padding: 5px;
+    width: 100%;
+    margin: auto;
+    margin-top: auto;
+    grid-template-columns: 50px 300px;
+    grid-template-rows: 40px 275px auto 40px 40px 70px 30px;
+    grid-template-areas: 
+    "hd hd hd hd"
+    "ro ro ro ro"
+    "main main main main"
+    "empty empty chat chat"
+    "ft ft fo fo"
+   "bt bt bt bt"
+   "end end end end"
+}
+
+.box {
+    border: 1px solid green;
+    display: flex;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    flex: 25%;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .description{
+      width: 100%;
+      height: auto;
+  }
+
+  a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+h2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#one{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size: 17px;
+}
+
+#caption{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 15px;
+}
