@@ -187,36 +187,33 @@ button:hover{
     border-radius: 60%;
     padding: 4px;
     align-items: center;
-  }
-
-  .fa:hover {
-    opacity: 0.9;
-    color: black;
-  }
-
-  .fa-facebook {
-    background: #3B5998;
     color: white;
+    background-color: #1a1a1a;
     margin: 5px;
   }
 
-  .fa-linkedin {
+  .fa-facebook:hover {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-linkedin:hover {
     background: #007bb5;
     color: white;
     margin: 5px;
   }
 
-  .fa-instagram {
+  .fa-instagram:hover {
     background: palevioletred;
     color: white;
     margin: 5px;
   }
 
-  .fa-youtube {
+  .fa-youtube:hover {
     background: #bb0000;
     color: white;
     margin: 5px;
-}
+  }
 
   #line{
       border: 1px dashed black;

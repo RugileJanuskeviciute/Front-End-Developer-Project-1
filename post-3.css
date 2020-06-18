@@ -1,5 +1,5 @@
 body{
-    background-color: burlywood;
+    background-color: #ffffff;
 }
 
 .header{
@@ -86,7 +86,7 @@ body{
     margin: auto;
     margin-top: auto;
     grid-template-columns: 50px 300px;
-    grid-template-rows: 40px 1825px 40px 40px 70px 30px;
+    grid-template-rows: 40px auto 40px 40px 70px 30px;
     grid-template-areas: 
     "hd hd hd hd"
     "main main main main"
@@ -190,36 +190,33 @@ button:hover{
     border-radius: 60%;
     padding: 4px;
     align-items: center;
-  }
-
-  .fa:hover {
-    opacity: 0.9;
-    color: black;
-  }
-
-  .fa-facebook {
-    background: #3B5998;
     color: white;
+    background-color: #1a1a1a;
     margin: 5px;
   }
 
-  .fa-linkedin {
+  .fa-facebook:hover {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-linkedin:hover {
     background: #007bb5;
     color: white;
     margin: 5px;
   }
 
-  .fa-instagram {
+  .fa-instagram:hover {
     background: palevioletred;
     color: white;
     margin: 5px;
   }
 
-  .fa-youtube {
+  .fa-youtube:hover {
     background: #bb0000;
     color: white;
     margin: 5px;
-}
+  }
 
   #line{
       border: 1px dashed black;
