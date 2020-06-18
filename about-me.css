@@ -1,5 +1,5 @@
 body{
-    background-color: burlywood;
+  background-color: #ffffff;
 }
 
 .header{
@@ -27,7 +27,15 @@ body{
 }
 
 .empty{
-    grid-area:empty;
+  grid-area:empty;
+  font-family: 'Playfair Display', serif;
+  background-color: #21272b;
+  color: white;
+  font-size: 16px;
+  padding:5px;
+  padding-left: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
 .chat{
@@ -37,40 +45,51 @@ body{
     font-weight: bold;
 }
 
+.chat{
+  grid-area: chat;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: #21272b;
+  color: white;
+}
+
 .footer{
-    grid-area: ft;
-    font-family: 'Playfair Display', serif;
-    font-size: 16px;
-    padding:5px;
-    padding-left: 15px;
-    align-items: center;
-    justify-self: center;
+  grid-area: ft;
+  background-color: #21272b;
+  color: white;
 } 
 
 .foot{
-    grid-area:fo;
-    padding:5px;
-    align-items: center;
-    justify-content: center;
+  grid-area:fo;
+  padding:5px;
+  align-items: center;
+  justify-content: center;
+  background-color: #21272b;
+  color: white;
 }
 
 .bottom{
-    grid-area: bt;
-    font-family: 'Playfair Display', serif;
-    font-size: 12px;
-    align-items: center;
-    text-align: justify;
-    padding: 10px;
+  grid-area: bt;
+  font-family: 'Playfair Display', serif;
+  font-size: 12px;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  background-color: #21272b;
+  color: white;
 }
 
 .end{
-    grid-area: end;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 12px;
-    padding: 10px
+  grid-area: end;
+  background-color: #21272b;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 12px;
+  padding: 10px
 }
 
 .container{
@@ -92,7 +111,7 @@ body{
 }
 
 .box {
-    border: 1px solid green;
+    border: none;
     display: flex;
 }
 

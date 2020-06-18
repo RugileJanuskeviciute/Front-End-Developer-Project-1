@@ -1,6 +1,6 @@
 body{
     padding: 20px;
-    background: rgb(219, 212, 212);
+    background:  #ffffff;
     scroll-behavior: smooth;
 }
 
@@ -9,7 +9,7 @@ body{
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     color: #666666;
-    -webkit-text-stroke: 0.5px #8c8c8c;
+    -webkit-text-stroke: 0.3px #2c343a;
     font-weight: bold;
     align-items: center;
     justify-content: space-around;
@@ -19,19 +19,19 @@ body{
     grid-area: main;
     padding: 15px;
     margin-bottom: 20px;
-    background-color: royalblue;
+    background-color: #e2e6e9;
 }
 
 .post-2{
     grid-area: post; 
-    background-color: saddlebrown;
+    background-color: #e2e6e9;
     padding: 15px;
     margin-bottom: 20px;
 }
 
 .post-3{
     grid-area: three; 
-    background-color: seagreen;
+    background-color: #e2e6e9;
     padding: 15px;
     margin-bottom: 20px;
 }
@@ -44,6 +44,16 @@ body{
 
 .empty{
     grid-area:empty;
+    background-color: #21272b;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    padding:5px;
+    padding-left: 15px;
+    padding-top: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #21272b;
+    color: white;
 }
 
 .chat{
@@ -51,16 +61,13 @@ body{
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    background-color: #21272b;
+    color: white;
 }
 
 .footer{
     grid-area: ft;
-    font-family: 'Playfair Display', serif;
-    font-size: 16px;
-    padding:5px;
-    padding-left: 15px;
-    align-items: center;
-    justify-self: center;
+    background-color: #21272b;
 } 
 
 .foot{
@@ -68,6 +75,8 @@ body{
     padding:5px;
     align-items: center;
     justify-content: center;
+    background-color: #21272b;
+    color: white;
 }
 
 .bottom{
@@ -77,12 +86,16 @@ body{
     align-items: center;
     text-align: justify;
     padding: 10px;
+    background-color: #21272b;
+    color: white;
 }
 
 .end{
     grid-area: end;
+    background-color: #21272b;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
+    color: white;
     align-items: center;
     justify-content: space-around;
     font-size: 12px;
@@ -107,7 +120,7 @@ body{
     margin-top: auto;
     grid-template-columns: 10px 300px;
     grid-template-rows: 100px 25px 25px auto auto auto 100px 40px 50px 70px 40px 10px;
-    border: 2px solid rgb(209, 25, 25);
+    border: none;
    grid-template-areas: 
    "hd hd hd hd"
    "one one one one"
@@ -123,7 +136,7 @@ body{
   }
 
 .box {
-    border: 1px solid green;
+    border: none;
     display: flex;
 }
 
@@ -180,8 +193,8 @@ input.right {
   }
 
   .button {
-    background-color: #4CAF50;
-    border: 2px solid black;
+    background-color: #c5cdd3;
+    border: 1px solid black;
     color: white;
     padding: 2px 22px;
     border-radius: 5%;
@@ -195,14 +208,18 @@ input.right {
 
   .button:hover {
     opacity: 0.9;
-    background-color: black;
+    background-color: #9aa7b1;
   }
 
   a{
       text-decoration: none;
-      color: black;
+      color: currentColor;
   }
 
   .date{
       text-decoration: underline;
+  }
+
+  a:hover{
+    text-decoration: underline;
   }
