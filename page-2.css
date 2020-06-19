@@ -358,7 +358,7 @@ input.right {
 
   @media(min-width: 901px){
     body{
-        padding: 60px;
+        padding: 40px;
         background:  #ffffff;
         scroll-behavior: smooth;
     }
@@ -474,7 +474,7 @@ input.right {
     
     .container{
         display: grid;
-        width: 60%;
+        width: 80%;
         margin: auto;
         margin-top: auto;
         grid-template-columns: 10px 300px;
