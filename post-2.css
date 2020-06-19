@@ -1,8 +1,9 @@
-body{
+body {
     background-color: #ffffff;
 }
 
-.header{
+
+.header {
     grid-area: hd;
     font-family: 'Playfair Display', serif;
     font-size: 12px;
@@ -13,14 +14,16 @@ body{
     justify-content: space-around;
 }
 
-.content{
+
+.content {
     grid-area: main;
     font-family: 'Raleway', sans-serif;
     text-align: center;
     padding: 10px;
 }
 
-.empty{
+
+.empty {
     grid-area:empty;
     background-color: #21272b;
     color: white;
@@ -32,7 +35,8 @@ body{
     justify-content: center;
 }
 
-.chat{
+
+.chat {
     grid-area: chat;
     align-items: center;
     justify-content: center;
@@ -41,13 +45,15 @@ body{
     color: white;
 }
 
-.footer{
+
+.footer {
     grid-area: ft;
     background-color: #21272b;
     color: white;
 } 
 
-.foot{
+
+.foot {
     grid-area:fo;
     padding:5px;
     align-items: center;
@@ -56,7 +62,8 @@ body{
     color: white;
 }
 
-.bottom{
+
+.bottom {
     grid-area: bt;
     font-family: 'Playfair Display', serif;
     background-color: #21272b;
@@ -67,7 +74,8 @@ body{
     padding: 10px;
 }
 
-.end{
+
+.end {
     grid-area: end;
     font-family: 'Playfair Display', serif;
     background-color: #21272b;
@@ -76,10 +84,11 @@ body{
     align-items: center;
     justify-content: space-around;
     font-size: 12px;
-    padding: 10px
+    padding: 10px;
 }
 
-.container{
+
+.container {
     display: grid;
     padding: 5px;
     width: 100%;
@@ -102,33 +111,39 @@ body{
     display: flex;
 }
 
-a{
+
+a {
     text-decoration: none;
     color: currentColor;
 }
 
-#one{
+
+#one {
     font-family: 'Times New Roman', Times, serif;
     text-align: justify;
     font-size: 17px;
 }
+
 
 li:hover {
     opacity: 0.9;
     color: #bfbfbf;
   }
 
-#caption{
+
+#caption {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 15px;
 }
 
-hr{
+
+hr {
     border-top: 2px solid black;
 }
 
-#reply{
+
+#reply {
     grid-area: main;
     display: grid;
     font-family: 'Raleway', sans-serif;
@@ -142,19 +157,22 @@ hr{
     box-shadow: 1px 1px 1px #999
 }
 
-#submission{
+
+#submission {
     font-family: 'Playfair Display', serif;
     font-size: 18px;
     text-align: left;
     align-items: left;
 }
 
-#fname{
+
+#fname {
     width: 510px;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #808080;
 }
+
 
 textarea {
     padding: 10px;
@@ -164,22 +182,26 @@ textarea {
     box-shadow: 1px 1px 1px #999;
 }
 
+
 label {
     display: block;
     margin-bottom: 10px;
 }
 
-button{
+
+button {
     width: 100px;
     font-family: 'Playfair Display', serif;
     font-size: 14px;
     box-shadow: 1px 1px 1px #999;
 }
 
-button:hover{
+
+button:hover {
     opacity: 0.9;
     background-color: #a9b3bc;
 }
+
 
 .fa {
     font-size: 30px;
@@ -195,10 +217,12 @@ button:hover{
     margin: 5px;
   }
 
+
   .fa-facebook:hover {
     background: #3B5998;
     color: white;
   }
+
 
   .fa-linkedin:hover {
     background: #007bb5;
@@ -206,11 +230,13 @@ button:hover{
     margin: 5px;
   }
 
+
   .fa-instagram:hover {
     background: palevioletred;
     color: white;
     margin: 5px;
   }
+
 
   .fa-youtube:hover {
     background: #bb0000;
@@ -218,11 +244,13 @@ button:hover{
     margin: 5px;
   }
 
-  #line{
+
+  #line {
       border: 1px dashed black;
   }
 
-  .link:hover{
+
+  .link:hover {
       opacity: 0.9;
       color: paleturquoise;
   }
