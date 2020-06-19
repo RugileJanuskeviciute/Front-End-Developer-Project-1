@@ -47,6 +47,7 @@ body {
     justify-content: center;
 }
 
+
 .empty {
     grid-area:empty;
     background-color: #21272b;
@@ -87,6 +88,7 @@ body {
     color: white;
 }
 
+
 .bottom{
     grid-area: bt;
     font-family: 'Playfair Display', serif;
@@ -108,7 +110,7 @@ body {
     align-items: center;
     justify-content: space-around;
     font-size: 12px;
-    padding: 10px
+    padding: 10px;
 }
 
 
@@ -253,7 +255,7 @@ input.right {
       background:  #ffffff;
       scroll-behavior: smooth;
   }
-  
+
 
   .header {
       grid-area: hd;
@@ -265,24 +267,26 @@ input.right {
       align-items: center;
       justify-content: space-around;
   }
-  
 
+  
   .content {
       grid-area: main;
       padding: 15px;
-      margin-bottom: 300px;
+      margin-bottom: 30px;
+      margin-right: 15px;
       background-color: #e2e6e9;
   }
 
-  
+
   .post-2 {
       grid-area: post; 
       background-color: #e2e6e9;
       padding: 15px;
       margin-bottom: 30px;
+      margin-left: 15px;
   }
 
-  
+
   .post-3 {
       grid-area: three; 
       background-color: #e2e6e9;
@@ -290,7 +294,6 @@ input.right {
       margin-bottom: 30px;
   }
 
-  
   .page {
       grid-area: page;
       align-items: center;
@@ -312,7 +315,7 @@ input.right {
       color: white;
   }
 
-  
+
   .chat {
       grid-area: chat;
       align-items: center;
@@ -321,13 +324,13 @@ input.right {
       background-color: #21272b;
       color: white;
   }
-  
+
 
   .footer {
       grid-area: ft;
       background-color: #21272b;
   } 
-  
+
 
   .foot {
       grid-area:fo;
@@ -337,7 +340,6 @@ input.right {
       background-color: #21272b;
       color: white;
   }
-  
 
   .bottom {
       grid-area: bt;
@@ -350,7 +352,7 @@ input.right {
       color: white;
   }
 
-  
+
   .end {
       grid-area: end;
       background-color: #21272b;
@@ -360,23 +362,22 @@ input.right {
       align-items: center;
       justify-content: space-around;
       font-size: 12px;
-      padding: 10px
+      padding: 10px;
   }
-  
 
+  
   .one {
       grid-area: one;
       font-size: 15px;
       align-items: center;
       justify-content: center;
   }
-  
+
 
   .two {
       grid-area: two;
   }
 
-  
   .container {
       display: grid;
       width: 100%;
@@ -407,7 +408,7 @@ input.right {
         scroll-behavior: smooth;
     }
 
-    
+ 
     .header {
         grid-area: hd;
         font-family: 'Playfair Display', serif;
@@ -418,7 +419,7 @@ input.right {
         align-items: center;
         justify-content: space-around;
     }
-    
+
 
     .content {
         grid-area: main;
@@ -426,16 +427,16 @@ input.right {
         margin-bottom: 50px;
         background-color: #e2e6e9;
     }
-    
 
+    
     .post-2 {
         grid-area: post; 
         background-color: #e2e6e9;
         padding: 15px;
         margin-bottom: 50px;
     }
-    
 
+    
     .post-3 {
         grid-area: three; 
         background-color: #e2e6e9;
@@ -475,13 +476,13 @@ input.right {
         color: white;
     }
 
-    
+
     .footer {
         grid-area: ft;
         background-color: #21272b;
     } 
 
-    
+
     .foot {
         grid-area:fo;
         padding:5px;
@@ -490,7 +491,7 @@ input.right {
         background-color: #21272b;
         color: white;
     }
-    
+
 
     .bottom {
         grid-area: bt;
@@ -503,7 +504,7 @@ input.right {
         color: white;
     }
 
-    
+
     .end {
         grid-area: end;
         background-color: #21272b;
@@ -513,22 +514,22 @@ input.right {
         align-items: center;
         justify-content: space-around;
         font-size: 12px;
-        padding: 10px
+        padding: 10px;
     }
-
     
+
     .one {
         grid-area: one;
         font-size: 15px;
         align-items: center;
         justify-content: center;
     }
-    
+
 
     .two {
         grid-area: two;
     }
-    
+
 
     .container {
         display: grid;
@@ -551,19 +552,19 @@ input.right {
        "end end end end"
       }
 
-    
+
     .box {
         border: none;
         display: flex;
     }
-
     
+
     input.right {
         position: absolute;
         right: 0;
     }
 
-    
+
       .center {
         display: block;
         margin-left: auto;
@@ -571,7 +572,7 @@ input.right {
         width: 70%;
       }
 
-    
+
       .fa {
         font-size: 30px;
         width: 25px;
@@ -591,14 +592,14 @@ input.right {
         background: #3B5998;
         color: white;
       }
-    
+
 
       .fa-linkedin:hover {
         background: #007bb5;
         color: white;
         margin: 5px;
       }
-    
+
 
       .fa-instagram:hover {
         background: palevioletred;
@@ -606,14 +607,14 @@ input.right {
         margin: 5px;
       }
 
-    
+
       .fa-youtube:hover {
         background: #bb0000;
         color: white;
         margin: 5px;
       }
-
     
+
       .button {
         background-color: #c5cdd3;
         border: 1px solid black;
@@ -628,24 +629,24 @@ input.right {
         font-family: 'Raleway', sans-serif;
       }
 
-    
+
       .button:hover {
         opacity: 0.9;
         background-color: #9aa7b1;
       }
 
-    
+
       a {
           text-decoration: none;
           color: currentColor;
       }
 
-    
+
       .date {
           text-decoration: underline;
       }
 
-    
+
       a:hover {
         text-decoration: underline;
       }

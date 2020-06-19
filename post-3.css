@@ -1,8 +1,9 @@
-body{
+body {
     background-color: #ffffff;
 }
 
-.header{
+
+.header {
     grid-area: hd;
     font-family: 'Playfair Display', serif;
     font-size: 12px;
@@ -13,14 +14,16 @@ body{
     justify-content: space-around;
 }
 
-.content{
+
+.content {
     grid-area: main;
     font-family: 'Raleway', sans-serif;
     text-align: center;
     padding: 10px;
 }
 
-.empty{
+
+.empty {
     grid-area:empty;
     font-family: 'Playfair Display', serif;
     background-color: #21272b;
@@ -32,7 +35,8 @@ body{
     justify-content: center;
 }
 
-.chat{
+
+.chat {
     grid-area: chat;
     align-items: center;
     justify-content: center;
@@ -41,13 +45,15 @@ body{
     color: white;
 }
 
-.footer{
+
+.footer {
     grid-area: ft;
     background-color: #21272b;
     color: white;
 } 
 
-.foot{
+
+.foot {
     grid-area:fo;
     padding:5px;
     align-items: center;
@@ -55,6 +61,7 @@ body{
     background-color: #21272b;
     color: white;
 }
+
 
 .bottom{
     grid-area: bt;
@@ -76,10 +83,10 @@ body{
     align-items: center;
     justify-content: space-around;
     font-size: 12px;
-    padding: 10px
+    padding: 10px;
 }
 
-.container{
+.container {
     display: grid;
     padding: 5px;
     width: 100%;
@@ -102,33 +109,39 @@ body{
     display: flex;
 }
 
-a{
+
+a {
     text-decoration: none;
     color: currentColor;
 }
 
-#one{
+
+#one {
     font-family: 'Times New Roman', Times, serif;
     text-align: justify;
     font-size: 17px;
 }
+
 
 li:hover {
     opacity: 0.9;
     color: blueviolet;
   }
 
-#caption{
+
+#caption {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 15px;
 }
 
-hr{
+
+hr {
     border-top: 2px solid black;
 }
 
-#reply{
+
+#reply {
     grid-area: main;
     display: grid;
     font-family: 'Raleway', sans-serif;
@@ -139,22 +152,25 @@ hr{
     height: 25px;
     margin: 0 auto;
     background-color: #c5cdd3;
-    box-shadow: 1px 1px 1px #999
+    box-shadow: 1px 1px 1px #999;
 }
 
-#submission{
+
+#submission {
     font-family: 'Playfair Display', serif;
     font-size: 18px;
     text-align: left;
     align-items: left;
 }
 
-#fname{
+
+#fname {
     width: 510px;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
 }
+
 
 textarea {
     padding: 10px;
@@ -164,22 +180,26 @@ textarea {
     box-shadow: 1px 1px 1px #808080;
 }
 
+
 label {
     display: block;
     margin-bottom: 10px;
 }
 
-button{
+
+button {
     width: 100px;
     font-family: 'Playfair Display', serif;
     font-size: 14px;
     box-shadow: 1px 1px 1px #999;
 }
 
-button:hover{
+
+button:hover {
     opacity: 0.9;
     background-color: #a9b3bc;
 }
+
 
 .fa {
     font-size: 30px;
@@ -195,10 +215,12 @@ button:hover{
     margin: 5px;
   }
 
+
   .fa-facebook:hover {
     background: #3B5998;
     color: white;
   }
+
 
   .fa-linkedin:hover {
     background: #007bb5;
@@ -206,11 +228,13 @@ button:hover{
     margin: 5px;
   }
 
+
   .fa-instagram:hover {
     background: palevioletred;
     color: white;
     margin: 5px;
   }
+
 
   .fa-youtube:hover {
     background: #bb0000;
@@ -218,16 +242,284 @@ button:hover{
     margin: 5px;
   }
 
-  #line{
+
+  #line {
       border: 1px dashed black;
   }
 
-  .link:hover{
+
+  .link:hover {
       opacity: 0.9;
       color: paleturquoise;
   }
 
-.photo{
+
+.photo {
     height:800px;
     width:600px;
+}
+
+
+@media (min-width:700px) {
+    body {
+        background-color: #ffffff;
+        padding: 40px;
+    }
+    
+    
+    .header {
+        grid-area: hd;
+        font-family: 'Playfair Display', serif;
+        font-size: 12px;
+        color: #666666;
+        -webkit-text-stroke: 0.5px #8c8c8c;
+        font-weight: bold;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    
+    .content {
+        grid-area: main;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    
+    .empty {
+        grid-area:empty;
+        font-family: 'Playfair Display', serif;
+        background-color: #21272b;
+        color: white;
+        font-size: 16px;
+        padding:5px;
+        padding-left: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .chat {
+        grid-area: chat;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        background-color: #21272b;
+        color: white;
+    }
+    
+    
+    .footer {
+        grid-area: ft;
+        background-color: #21272b;
+        color: white;
+    } 
+    
+    
+    .foot {
+        grid-area:fo;
+        padding:5px;
+        align-items: center;
+        justify-content: center;
+        background-color: #21272b;
+        color: white;
+    }
+    
+    
+    .bottom{
+        grid-area: bt;
+        font-family: 'Playfair Display', serif;
+        font-size: 12px;
+        align-items: center;
+        text-align: justify;
+        padding: 10px;
+        background-color: #21272b;
+        color: white;
+    }
+    
+    .end{
+        grid-area: end;
+        font-family: 'Playfair Display', serif;
+        background-color: #21272b;
+        color: white;
+        font-weight: bold;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    .container {
+        display: grid;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        margin-top: auto;
+        grid-template-columns: 50px 300px;
+        grid-template-rows: 40px auto 40px 40px 70px 30px;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "main main main main"
+        "empty empty chat chat"
+        "ft ft fo fo"
+       "bt bt bt bt"
+       "end end end end"
+    }
+    
+    
+    .box {
+        border: none;
+        display: flex;
+    }
+    
+    
+    a {
+        text-decoration: none;
+        color: currentColor;
+    }
+    
+    
+    #one {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify;
+        font-size: 17px;
+    }
+    
+    
+    li:hover {
+        opacity: 0.9;
+        color: blueviolet;
+      }
+    
+    
+    #caption {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    
+    hr {
+        border-top: 2px solid black;
+    }
+    
+    
+    #reply {
+        grid-area: main;
+        display: grid;
+        font-family: 'Raleway', sans-serif;
+        border: 1px solid black;
+        text-align: center;
+        align-items: center;
+        width: 170px;
+        height: 25px;
+        margin: 0 auto;
+        background-color: #c5cdd3;
+        box-shadow: 1px 1px 1px #999;
+    }
+    
+    
+    #submission {
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        text-align: left;
+        align-items: left;
+    }
+    
+    
+    #fname {
+        width: 510px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 1px #999;
+    }
+    
+    
+    textarea {
+        padding: 10px;
+        line-height: 1.5;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 1px #808080;
+    }
+    
+    
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    
+    button {
+        width: 100px;
+        font-family: 'Playfair Display', serif;
+        font-size: 14px;
+        box-shadow: 1px 1px 1px #999;
+    }
+    
+    
+    button:hover {
+        opacity: 0.9;
+        background-color: #a9b3bc;
+    }
+    
+    
+    .fa {
+        font-size: 30px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 60%;
+        padding: 4px;
+        align-items: center;
+        color: white;
+        background-color: #1a1a1a;
+        margin: 5px;
+      }
+    
+    
+      .fa-facebook:hover {
+        background: #3B5998;
+        color: white;
+      }
+    
+    
+      .fa-linkedin:hover {
+        background: #007bb5;
+        color: white;
+        margin: 5px;
+      }
+    
+    
+      .fa-instagram:hover {
+        background: palevioletred;
+        color: white;
+        margin: 5px;
+      }
+    
+    
+      .fa-youtube:hover {
+        background: #bb0000;
+        color: white;
+        margin: 5px;
+      }
+    
+    
+      #line {
+          border: 1px dashed black;
+      }
+    
+    
+      .link:hover {
+          opacity: 0.9;
+          color: paleturquoise;
+      }
+    
+    
+    .photo {
+        width: 70%;
+    }
+    
 }
