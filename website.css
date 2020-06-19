@@ -242,24 +242,22 @@ input.right {
   .content{
       grid-area: main;
       padding: 15px;
-      margin-bottom: 20px;
+      margin-bottom: 300px;
       background-color: #e2e6e9;
-      margin-right: 10px;
   }
   
   .post-2{
       grid-area: post; 
       background-color: #e2e6e9;
       padding: 15px;
-      margin-bottom: 20px;
-      margin-left: 10px;;
+      margin-bottom: 30px;
   }
   
   .post-3{
       grid-area: three; 
       background-color: #e2e6e9;
       padding: 15px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
   }
   
   .page{
@@ -359,4 +357,228 @@ input.right {
      "bt bt bt bt"
      "end end end end"
     }
+  }
+
+  @media(min-width: 901px){
+    body{
+        padding: 60px;
+        background:  #ffffff;
+        scroll-behavior: smooth;
+    }
+    
+    .header{
+        grid-area: hd;
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        color: #666666;
+        -webkit-text-stroke: 0.3px #2c343a;
+        font-weight: bold;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .content{
+        grid-area: main;
+        padding: 15px;
+        margin-bottom: 50px;
+        background-color: #e2e6e9;
+    }
+    
+    .post-2{
+        grid-area: post; 
+        background-color: #e2e6e9;
+        padding: 15px;
+        margin-bottom: 50px;
+    }
+    
+    .post-3{
+        grid-area: three; 
+        background-color: #e2e6e9;
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .page{
+        grid-area: page;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .empty{
+        grid-area:empty;
+        background-color: #21272b;
+        font-family: 'Playfair Display', serif;
+        font-size: 16px;
+        padding:5px;
+        padding-left: 15px;
+        padding-top: 15px;
+        align-items: center;
+        justify-content: center;
+        background-color: #21272b;
+        color: white;
+    }
+    
+    .chat{
+        grid-area: chat;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        background-color: #21272b;
+        color: white;
+    }
+    
+    .footer{
+        grid-area: ft;
+        background-color: #21272b;
+    } 
+    
+    .foot{
+        grid-area:fo;
+        padding:5px;
+        align-items: center;
+        justify-content: center;
+        background-color: #21272b;
+        color: white;
+    }
+    
+    .bottom{
+        grid-area: bt;
+        font-family: 'Playfair Display', serif;
+        font-size: 12px;
+        align-items: center;
+        text-align: justify;
+        padding: 10px;
+        background-color: #21272b;
+        color: white;
+    }
+    
+    .end{
+        grid-area: end;
+        background-color: #21272b;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        color: white;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 12px;
+        padding: 10px
+    }
+    
+    .one{
+        grid-area: one;
+        font-size: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .two{
+        grid-area: two;
+    }
+    
+    .container{
+        display: grid;
+        width: 60%;
+        margin: auto;
+        margin-top: auto;
+        grid-template-columns: 10px 300px;
+        grid-template-rows: 100px 25px 25px auto auto auto 100px 40px 50px 70px 40px 10px;
+       grid-template-areas: 
+       "hd hd hd hd"
+       "one one one one"
+       "two two two two"
+       "main main main main"
+       "post post post post"
+       "three three three three"
+       "page page page page"
+       "empty empty chat chat"
+       "ft ft fo fo"
+       "bt bt bt bt"
+       "end end end end"
+      }
+    
+    .box {
+        border: none;
+        display: flex;
+    }
+    
+    input.right {
+        position: absolute;
+        right: 0;
+    }
+    
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+      }
+    
+      .fa {
+        font-size: 30px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 60%;
+        padding: 4px;
+        align-items: center;
+        color: white;
+        background-color: #1a1a1a;
+        margin: 5px;
+      }
+    
+      .fa-facebook:hover {
+        background: #3B5998;
+        color: white;
+      }
+    
+      .fa-linkedin:hover {
+        background: #007bb5;
+        color: white;
+        margin: 5px;
+      }
+    
+      .fa-instagram:hover {
+        background: palevioletred;
+        color: white;
+        margin: 5px;
+      }
+    
+      .fa-youtube:hover {
+        background: #bb0000;
+        color: white;
+        margin: 5px;
+      }
+    
+      .button {
+        background-color: #c5cdd3;
+        border: 1px solid black;
+        color: black;
+        padding: 2px 22px;
+        border-radius: 5%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Raleway', sans-serif;
+      }
+    
+      .button:hover {
+        opacity: 0.9;
+        background-color: #9aa7b1;
+      }
+    
+      a{
+          text-decoration: none;
+          color: currentColor;
+      }
+    
+      .date{
+          text-decoration: underline;
+      }
+    
+      a:hover{
+        text-decoration: underline;
+      }
   }

@@ -1,5 +1,6 @@
 body{
   background-color: #ffffff;
+  padding: 10px;
 }
 
 .header{
@@ -14,16 +15,21 @@ body{
 }
 
 .row {
-    display: flex;
+    display: grid;
     grid-area: ro; 
     padding-top: 30px;
   }
+
+.after{
+  grid-area: after;
+}
 
 .content{
     grid-area: main;
     font-family: 'Raleway', sans-serif;
     text-align: center;
     padding: 10px;
+    margin: 20px;
 }
 
 .empty{
@@ -36,13 +42,6 @@ body{
   padding-left: 15px;
   align-items: center;
   justify-content: center;
-}
-
-.chat{
-    grid-area: chat;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
 }
 
 .chat{
@@ -99,10 +98,11 @@ body{
     margin: auto;
     margin-top: auto;
     grid-template-columns: 50px 300px;
-    grid-template-rows: 40px 275px auto 40px 40px 70px 30px;
+    grid-template-rows: 40px auto 10px auto 40px 40px 70px 30px;
     grid-template-areas: 
     "hd hd hd hd"
     "ro ro ro ro"
+    "after after after after"
     "main main main main"
     "empty empty chat chat"
     "ft ft fo fo"
@@ -116,17 +116,16 @@ body{
 }
 
 .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
-    flex: 25%;
-  }
+  width: 25%;
+  padding: 10px;
+  flex: 25%;
+}
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
   .description{
       width: 100%;
@@ -191,4 +190,392 @@ h2{
     background: #bb0000;
     color: white;
     margin: 5px;
+  }
+
+  @media (min-width:700px) and (max-width:950px){
+    body{
+      background-color: #ffffff;
+      padding: 40px;
+    }
+    
+    .header{
+        grid-area: hd;
+        font-family: 'Playfair Display', serif;
+        font-size: 12px;
+        color: #666666;
+        -webkit-text-stroke: 0.5px #8c8c8c;
+        font-weight: bold;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .row {
+        display: grid;
+        grid-area: ro; 
+        padding-top: 30px;
+      }
+    
+    .content{
+        grid-area: main;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        padding: 10px;
+        margin: 20px;
+    }
+    
+    .empty{
+      grid-area:empty;
+      font-family: 'Playfair Display', serif;
+      background-color: #21272b;
+      color: white;
+      font-size: 16px;
+      padding:5px;
+      padding-left: 15px;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .chat{
+      grid-area: chat;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      background-color: #21272b;
+      color: white;
+    }
+    
+    .footer{
+      grid-area: ft;
+      background-color: #21272b;
+      color: white;
+    } 
+    
+    .foot{
+      grid-area:fo;
+      padding:5px;
+      align-items: center;
+      justify-content: center;
+      background-color: #21272b;
+      color: white;
+    }
+    
+    .bottom{
+      grid-area: bt;
+      font-family: 'Playfair Display', serif;
+      font-size: 12px;
+      align-items: center;
+      text-align: justify;
+      padding: 10px;
+      background-color: #21272b;
+      color: white;
+    }
+    
+    .end{
+      grid-area: end;
+      background-color: #21272b;
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      color: white;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 12px;
+      padding: 10px
+    }
+    
+    .container{
+        display: grid;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        margin-top: auto;
+        grid-template-columns: 50px 300px;
+        grid-template-rows: 40px 275px auto 40px 40px 70px 30px;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "ro ro ro ro"
+        "main main main main"
+        "empty empty chat chat"
+        "ft ft fo fo"
+       "bt bt bt bt"
+       "end end end end"
+    }
+    
+    .box {
+        border: none;
+        display: flex;
+    }
+    
+    .column {
+      width: 25%;
+      padding: 10px;
+      flex: 25%;
+    }
+    
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+  .description{
+    width: 90%;
+    height: auto;
+      }
+    
+      a{
+        text-decoration: none;
+        color: currentColor;
+    }
+    
+    h2{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #one{
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify;
+        font-size: 17px;
+    }
+    
+    #caption{
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .fa {
+      font-size: 30px;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 60%;
+      padding: 4px;
+      align-items: center;
+      color: white;
+      background-color: #1a1a1a;
+      margin: 5px;
+    }
+    
+      .fa-facebook:hover {
+        background: #3B5998;
+        color: white;
+      }
+    
+      .fa-linkedin:hover {
+        background: #007bb5;
+        color: white;
+        margin: 5px;
+      }
+    
+      .fa-instagram:hover {
+        background: palevioletred;
+        color: white;
+        margin: 5px;
+      }
+    
+      .fa-youtube:hover {
+        background: #bb0000;
+        color: white;
+        margin: 5px;
+      }
+    }
+
+  @media(min-width: 951px){
+  body{
+    background-color: #ffffff;
+    padding: 90px;
+  }
+  
+  .header{
+      grid-area: hd;
+      font-family: 'Playfair Display', serif;
+      font-size: 12px;
+      color: #666666;
+      -webkit-text-stroke: 0.5px #8c8c8c;
+      font-weight: bold;
+      align-items: center;
+      justify-content: space-around;
+  }
+  
+  .row {
+      display: grid;
+      grid-area: ro; 
+      padding-top: 30px;
+    }
+  
+  .after{
+    grid-area: after;
+  }
+  
+  .content{
+      grid-area: main;
+      font-family: 'Raleway', sans-serif;
+      text-align: center;
+      padding: 10px;
+      margin: 20px;
+  }
+  
+  .empty{
+    grid-area:empty;
+    font-family: 'Playfair Display', serif;
+    background-color: #21272b;
+    color: white;
+    font-size: 16px;
+    padding:5px;
+    padding-left: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chat{
+    grid-area: chat;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #21272b;
+    color: white;
+  }
+  
+  .footer{
+    grid-area: ft;
+    background-color: #21272b;
+    color: white;
+  } 
+  
+  .foot{
+    grid-area:fo;
+    padding:5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #21272b;
+    color: white;
+  }
+  
+  .bottom{
+    grid-area: bt;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    background-color: #21272b;
+    color: white;
+  }
+  
+  .end{
+    grid-area: end;
+    background-color: #21272b;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px;
+    padding: 10px
+  }
+  
+  .container{
+      display: grid;
+      width: 90%;
+      margin: auto;
+      margin-top: auto;
+      grid-template-columns: 50px 300px;
+      grid-template-rows: 40px auto 10px auto 40px 40px 70px 30px;
+      grid-template-areas: 
+      "hd hd hd hd"
+      "ro ro ro ro"
+      "after after after after"
+      "main main main main"
+      "empty empty chat chat"
+      "ft ft fo fo"
+     "bt bt bt bt"
+     "end end end end"
+  }
+  
+  .box {
+      border: none;
+      display: flex;
+  }
+  
+  .column {
+    width: 25%;
+    padding: 10px;
+    flex: 25%;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .description{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  
+  a{
+      text-decoration: none;
+      color: currentColor;
+  }
+  
+  h2{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+  
+  #one{
+      font-family: 'Times New Roman', Times, serif;
+      text-align: justify;
+      font-size: 17px;
+  }
+  
+  #caption{
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      font-size: 15px;
+  }
+  
+  .fa {
+    font-size: 30px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 60%;
+    padding: 4px;
+    align-items: center;
+    color: white;
+    background-color: #1a1a1a;
+    margin: 5px;
+  }
+  
+  .fa-facebook:hover {
+      background: #3B5998;
+      color: white;
+    }
+  
+  .fa-linkedin:hover {
+      background: #007bb5;
+      color: white;
+      margin: 5px;
+    }
+  
+  .fa-instagram:hover {
+      background: palevioletred;
+      color: white;
+      margin: 5px;
+    }
+  
+    .fa-youtube:hover {
+      background: #bb0000;
+      color: white;
+      margin: 5px;
+    }
   }
